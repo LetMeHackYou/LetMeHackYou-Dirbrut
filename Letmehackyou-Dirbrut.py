@@ -4,7 +4,7 @@ url = input("enter the url")
 if sys.platform == "darwin":
     wordlist = input("enter the directory of the wordlist:")
 elif sys.platform == "linux2":
-    res = requests.get("url")
+    res = requests.get(url)
     if res.status_code == 200:
         print("select the size of the wordlist..\n")
         print("1.Small\n2.Medium\n3.Big\n4.custom")
