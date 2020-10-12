@@ -22,6 +22,6 @@ elif sys.platform == "linux2":
     else:
         print("host is not working")
 for dir in wordlist:
-    brut = requests.get("url"+"/"+dir)
+    brut = requests.get(url+"/"+dir)
     if brut.status_code == 200:
         print("url"+"/"+dir)
